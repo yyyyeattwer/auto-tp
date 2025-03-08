@@ -12,6 +12,11 @@ local exitButton = Instance.new("TextButton")
 local uiCorner = Instance.new("UICorner")
 local uiGradient = Instance.new("UIGradient")
 
+player.CharacterAdded:Connect(function(character)
+    playerCharacter = character
+    hrp = playerCharacter:WaitForChild("HumanoidRootPart")
+end)
+
 screenGui.Parent = game.CoreGui
 mainFrame.Parent = screenGui
 toggleButton.Parent = mainFrame
