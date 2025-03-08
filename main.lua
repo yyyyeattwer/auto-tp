@@ -77,7 +77,7 @@ exitButton.BackgroundColor3 = Color3.fromRGB(150, 50, 50)
 
 local autoTeleport = false
 local lastTeleportTime = 0
-local teleportCooldown = 2 
+local teleportCooldown = 1.2
 
 local function updateButton()
     toggleButton.Text = "Auto TP: " .. (autoTeleport and "ON" or "OFF")
